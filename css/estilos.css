@@ -5,7 +5,7 @@
 }
 nav ul li a{
     font-size: 20px;
-    padding-right: 2rem ;
+    margin-right: 2rem ;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
@@ -15,6 +15,10 @@ a{
 }
 nav ul li{
     display: inline-block;
+}
+nav ul li a:hover {
+    background-color: lightblue;
+    color: black;
 }
 header{
     padding-top: 3%;
@@ -48,7 +52,7 @@ section article{
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     text-align: center;
-    padding-bottom: 1re;
+    padding-bottom: 1rem;
 }
 .imagen_principal{
     width: 100%;
@@ -59,6 +63,13 @@ section article{
     display:flex;
     justify-content: center;
     align-items:flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 5%;
+}
+.textonro3{
+    color:black;
+    background-color: lightblue;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     padding: 5%;
@@ -87,6 +98,21 @@ section article img{
     padding-top: 5%;
     padding-right: 5%;
     padding-left: 15%;
+}
+.encabezado{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.textonro2{
+    color:black;
+    background-color: lightblue;
+    display:flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 5%;
 }
 .final{
     background-image: url("../imagenes/imagen_parte_dos.jpg");
@@ -122,4 +148,132 @@ section article img{
 }
 .imagenes_galería div a img{
     padding: 5px;
+}
+.terciario {
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-bottom: 2rem;
+    display: flex;
+}
+.terciario div {
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+}
+.terciario input {
+    margin-bottom: 20px;
+}
+.titulo_contacto{
+    font-family:'Roboto', sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.icon{
+    display: none;
+}
+.formulario{
+    font-family:'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    header{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul{ 
+        display: none; 
+    }
+    nav ul li{
+        display: block;
+        text-align: end;
+    }
+    .icon{ 
+        display: flex; 
+        justify-content: end;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+    header div, header a{
+        flex: 1 0 44%;
+    }
+    header nav{
+        flex-basis: 100%;
+    }
+    nav.responsive ul{
+        display: block;
+        width: 100%;
+    }
+    .familias{
+        display: inline-block;
+    }
+    .familias div {
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+    }
+    .familias div a img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    article.familias{
+        width: 100%;
+    }
+    section article{
+        margin-top: 0;
+    }
+    section article img{
+        padding-top: 10%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        width: 100%;
+    }
+    .final{
+        background-image: url("../imagenes/imagen_parte_dos.jpg");
+        background-repeat: no-repeat;
+        height: 5rem;
+    }
+    .tituloart{
+        font-size: 25px;
+        padding-top: 2rem;
+    }
+    .textonro1{
+        display: block;
+    }
+    .textonro1 div{
+        width: 100%;
+    }
+    .elenco{
+        padding:10% 5%;
+    }
+    .elenco li{
+        padding-bottom: 0;
+    }
+    .terciario{
+        display: inline;
+    }
+    #texto_terciario{
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+    .terciario div{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .imagenes_galería div{
+        padding: 0;
+    }
+    .imagenes_galería{
+        margin: 12%;
+        padding: 0;
+        display: inline-block;
+    }
+    .imagenes_galería div img{
+        max-width: 100%;
+        width: 100%;
+    }
 }

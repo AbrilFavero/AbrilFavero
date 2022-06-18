@@ -2,12 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name= "viewport" content= "width = device-width, initial-scale = 1.0">
     <title>Modern Family Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
+    
 </head>
 <body>
     <img src="imagenes/imagen_parte_uno.jpg" class="imagen_principal" alt="Imagen principal parte uno">
@@ -15,12 +19,15 @@
         <div>
             <a href="index.html"><img src="imagenes/modern_family_logo.jpg" alt="Logo MF"></a>
         </div>
-        <nav class="navegacion">
-            <ul>
-                 <li><a href="index.html">INICIO</a></li>
-                 <li><a href="galería.html">GALERÍA</a></li>
-                 <li><a href="nosotros.html">NOSOTROS</a></li>
-            </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id= "navegador" class="navegacion">
+          <ul>
+            <li><a href="familiadunphy.html">DUNPHY</a></li>
+            <li><a href="familiapritchett.html">PRITCHETT</a></li>
+            <li><a href="familiatucker.html">TUCKER</a></li>
+            <li><a href="galería.html">GALERÍA</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+       </ul>
     </nav>  
     </header>
     <section class="imagenes_galería">
@@ -53,4 +60,15 @@
     </footer>
     <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
+<script type="text/javascript">
+  function myFunction (){
+      let x = document.getElementById("navegador");
+      if (x.className !== "navegacion responsive"){
+          x.className= "navegacion responsive";
+      }
+      else {
+          x.className = "navegacion";
+      }
+  }
+</script>
 </html>

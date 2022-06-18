@@ -2,7 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name= "viewport" content= "width = device-width, initial-scale = 1.0">
     <title>Modern Family Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -14,37 +17,34 @@
         <div>
             <a href="index.html"><img src="imagenes/modern_family_logo.jpg" alt="Logo MF"></a>
         </div>
-        <nav class="navegacion">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id= "navegador" class="navegacion">
             <ul>
-                 <li><a href="index.html">INICIO</a></li>
-                 <li><a href="galería.html">GALERÍA</a></li>
-                 <li><a href="nosotros.html">NOSOTROS</a></li>
-            </ul>
+                <li><a href="familiadunphy.html">DUNPHY</a></li>
+                <li><a href="familiapritchett.html">PRITCHETT</a></li>
+                <li><a href="familiatucker.html">TUCKER</a></li>
+                <li><a href="galería.html">GALERÍA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+           </ul>
     </nav>  
     </header>
     <section>   
         <article>
             <h1 class="tituloart">Familia Dunphy</h1>
-            <p class="textonro1">Phil Dunphy es un agente de bienes raíces a quien le apasionan los trucos de magia, y está casado con Claire Dunphy, hija de Jay Pritchett y empresaria en la compañía familiar, con quien tiene tres hijos. Él se autodenomina como un papá “cool”. La hija mayor de la familia es Haley, conocida por ser bastante rebelde, extrovertida e irresponsable, aunque también, es cariñosa y empática por su familia y amigos.
-                Alex, por el otro lado, es la más madura e inteligente entre sus hermanos, sin embargo, la más insegura. Su constante preocupación por ser la mejor académicamente, al igual que su madre Claire le ha traído mucho estrés. Luke, el hijo menor de los Dunphy, es un adolescente revoltoso, pero de buen corazón, comparado constantemente con Alex en sentido de inteligencia. Su padre se considera su mejor amigo, aparte de Manny Delgado.
-            </p><link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+            <p class="textonro3"><strong> Phil Dunphy</strong> es un agente de bienes raíces a quien <strong>le apasionan los trucos de magia, y está casado con Claire Dunphy</strong>, hija de Jay Pritchett y empresaria en la compañía familiar, con quien tiene tres hijos.<strong> La hija mayor de la familia es Haley</strong>, conocida por ser bastante <strong>rebelde, extrovertida e irresponsable</strong>, aunque, cariñosa con sus familiares.
+                <strong>Alex</strong>, por el otro lado, <strong>es la más madura e inteligente entre sus hermanos</strong>, sin embargo, la más insegura. Su constante preocupación por ser la mejor académicamente le ha traído mucho estrés.<strong> Luke, el hijo menor de los Dunphy, es un adolescente revoltoso</strong>, pero de buen corazón, comparado constantemente con Alex en sentido de inteligencia.</p>
             <img src="imagenes/principal_dunphy.jpg" alt="Principal Dunphy">
         </article>       
     </section>
     <section class="elenco">
+           <p class="encabezado"><strong>ELENCO DE ESTA FAMILIA CONSTITUYE DE:</strong></p> 
         <ul>
-            <li><strong>ELENCO DE ESTA FAMILIA CONSTITUYE DE:</strong></li>
-            <li>Ty Burrell como Phil</li>
-            <li>Julie Bowen como Claire</li>
-            <li>Sarah Hyland como Hailey</li>
-            <li>Ariel Winter como Alex</li>
-            <li>Nolan Gould como Luke</li>
+            <li>Ty Burrell como <em>&nbsp; Phil</em></li>
+            <li>Julie Bowen como <em>&nbsp; Claire</em></li>
+            <li>Sarah Hyland como <em>&nbsp; Hailey</em></li>
+            <li>Ariel Winter como <em>&nbsp; Alex</em></li>
+            <li>Nolan Gould como<em>&nbsp;Luke</em></li>
         </ul>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         </article>
     </section>
     <footer>
@@ -54,4 +54,15 @@
         </article>
     </footer>
 </body>
+<script type="text/javascript">
+    function myFunction (){
+        let x = document.getElementById("navegador");
+        if (x.className !== "navegacion responsive"){
+            x.className= "navegacion responsive";
+        }
+        else {
+            x.className = "navegacion";
+        }
+    }
+</script>
 </html>

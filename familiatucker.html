@@ -2,7 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name= "viewport" content= "width = device-width, initial-scale = 1.0">
     <title>Modern Family Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -14,31 +17,31 @@
         <div>
             <a href="index.html"><img src="imagenes/modern_family_logo.jpg" alt="Logo MF"></a>
         </div>
-        <nav class="navegacion">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id= "navegador" class="navegacion">
             <ul>
-                 <li><a href="index.html">INICIO</a></li>
-                 <li><a href="galería.html">GALERÍA</a></li>
-                 <li><a href="nosotros.html">NOSOTROS</a></li>
-            </ul>
+                <li><a href="familiadunphy.html">DUNPHY</a></li>
+                <li><a href="familiapritchett.html">PRITCHETT</a></li>
+                <li><a href="familiatucker.html">TUCKER</a></li>
+                <li><a href="galería.html">GALERÍA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+           </ul>
     </nav>  
     </header>
     <section>
         <article>
-            <h1 class="tituloart">Familia Tucker-Pritchett</h1>
-            <p class="textonro1">Mitchell Pritchett es el hijo menor de Jay Pritchett y esposo de Cameron Tucker con quien tiene una hija adoptada. Mientras que él es sobreprotector, no le gustan las demostraciones de afecto en público y suele actuar muy nervioso y reservado, Cameron tiene una personalidad melodramática y extrovertida. Un dato curioso que marcó mucho a Cam es su obsesión por el payaso Fizbo al que él interpretaba. 
-                Lily Tucker-Pritchett nació en Vietnam y fue adoptada de bebé. Durante las primeras temporadas tiene un papel muy secundario, sin embargo, a partir de las siguientes temporadas empieza a destacarse por su humor sarcástico y originalidad.
-            </p><link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+            <h1 class="tituloart">Familia Tucker-Pritchett</h1></strong>
+            <p class="textonro3"><strong>Mitchell Pritchett</strong> es el hijo menor de Jay Pritchett y <strong>esposo de Cameron Tucker</strong> con quien tiene una hija adoptada. Mientras que él es sobreprotector, no le gustan las demostraciones de afecto en público y suele actuar muy nervioso y reservado, <strong>Cameron tiene una personalidad melodramática y extrovertida.</strong> Un dato curioso que marcó mucho a Cam es su obsesión por el payaso Fizbo al que él interpretaba. 
+                <strong>Lily Tucker-Pritchett nació en Vietnam y fue adoptada de bebé</strong>. Durante las primeras temporadas tiene un papel muy secundario, sin embargo, a partir de las siguientes temporadas empieza a destacarse por su <strong> sarcástico y originalidad.</strong></p>
                 <img src="imagenes/principal_tucker.jpg" alt="Principal Tucker">
         </article>  
     </section> 
     <section class="elenco">
+        <p class="encabezado"><strong>ELENCO DE ESTA FAMILIA CONSTITUYE DE:</strong></p>
         <ul>
-            <li><strong>ELENCO DE ESTA FAMILIA CONSTITUYE DE:</strong></li>
-            <li>Jesse Tyler Ferguson como Mitchell</li>
-            <li>Eric Stonestreet como Cameron</li>
-            <li>Aubrey Anderson-Emmons como Lily</li>
+            <li>Jesse Tyler Ferguson como <em>&nbsp; Mitchell </em></li>
+            <li>Eric Stonestreet como <em>&nbsp; Cameron </em> </li>
+            <li>Aubrey Anderson-Emmons como <em>&nbsp; Lily </em></li>
         </ul>
     </section>
     <footer>
@@ -48,4 +51,15 @@
         </article>
     </footer>
 </body>
+<script type="text/javascript">
+    function myFunction (){
+        let x = document.getElementById("navegador");
+        if (x.className !== "navegacion responsive"){
+            x.className= "navegacion responsive";
+        }
+        else {
+            x.className = "navegacion";
+        }
+    }
+</script>
 </html>

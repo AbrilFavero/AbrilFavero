@@ -48,6 +48,9 @@ header{
 section article{
     margin-top: 3rem;
 }
+section{
+    text-align: center;
+}
 .tituloart{
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -62,7 +65,7 @@ section article{
     background-color: lightblue;
     display:flex;
     justify-content: center;
-    align-items:flex-start;
+    text-align: left;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     padding: 5%;
@@ -73,6 +76,7 @@ section article{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     padding: 5%;
+    text-align: left;
 }
 .textonro1 div{
     width: 50%;
@@ -96,8 +100,7 @@ section article{
 }
 section article img{
     padding-top: 5%;
-    padding-right: 5%;
-    padding-left: 15%;
+
 }
 .encabezado{
     font-family: 'Roboto', sans-serif;
@@ -198,7 +201,7 @@ section article img{
         padding: 2rem;
     }
     header div, header a{
-        flex: 1 0 44%;
+        flex: 1 0 33%;
     }
     header nav{
         flex-basis: 100%;

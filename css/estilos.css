@@ -45,10 +45,10 @@ header{
     width: 100%;
     margin-bottom: 2rem;
 }
-section article{
+.section article{
     margin-top: 3rem;
 }
-section{
+.section{
     text-align: center;
 }
 .tituloart{
